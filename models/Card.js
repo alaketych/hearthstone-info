@@ -6,14 +6,17 @@ const CardSchema = new Schema({
     plrClass: {
         type: Schema.Types.ObjectId,
         ref : 'Class'
-    }, 
+    },
     cardSet : {
         type: Schema.Types.ObjectId,
         ref : 'Set',
     },
     type    : String,
     faction : String,
-    rarity  : String,
+    rarity  : {
+        type: Schema.Types.ObjectId,
+        ref : 'Rarity',
+    },
     cost    : Number,
     health  : Number,
     text    : String,

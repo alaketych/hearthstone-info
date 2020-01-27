@@ -1,0 +1,44 @@
+main {
+    margin-left: 125px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.format {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.header {
+    background: #ff8000;
+    margin-bottom: 25px;
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.addition {
+    background: #3b3b47;
+    padding: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.addition a {
+    text-decoration: none;
+    color: black;
+}
+
+.addition:hover {
+    transition-property: background;
+    transition-duration: .5s;
+    transition-delay: .1s;
+    background: #ff8000;
+}
